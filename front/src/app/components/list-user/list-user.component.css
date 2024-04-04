@@ -1,0 +1,30 @@
+.table-container {
+    margin: 0 auto;
+    max-width: 750px; 
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th {
+    background-color: #1069cf;
+    border: 1px solid #dddddd;
+    color: white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  tbody td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  .avatar-img {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+  }
+  

@@ -1,0 +1,22 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>email</th>
+          <th>Avatar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{user.username}}</td>
+          <td>{{user.email}}</td>
+
+          <td>
+            <img *ngIf="user.id && avatarUrlMap.get(user.id)" [src]="avatarUrlMap.get(user.id)" alt="Avatar" class="avatar-img">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

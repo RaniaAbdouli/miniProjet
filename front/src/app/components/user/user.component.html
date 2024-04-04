@@ -1,0 +1,20 @@
+<div class="form-container">
+    <form (ngSubmit)="Creat()" enctype="multipart/form-data">
+        <div class="success-message" *ngIf="message">{{ message }}</div>
+  
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="userData.username" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="userData.email" required>
+      </div>
+      <div>
+        <label for="avatar">Avatar:</label>
+        <input type="file" id="avatar" name="avatar" (change)="onFileSelected($event)" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
